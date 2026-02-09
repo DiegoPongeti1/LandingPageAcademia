@@ -10,7 +10,7 @@ export function FooterPage() {
 
                 <p className="text-sm text-black">Telefone: (16) 99363-3824</p>
                 <p className="text-sm text-black">Email: [EMAIL_ADDRESS]</p>
-                <a href="#" className="text-black">Endereço</a>
+                <a href="https://maps.app.goo.gl/SmLdD8HPrkFFAb2Y6" className="text-black">R. Luís Antônio Giora, 2, Restinga - SP, 14430-000</a>
 
                 <ul className="flex flex-col gap-2 mg-2 text-black">
                     <li className="flex flex-row">
