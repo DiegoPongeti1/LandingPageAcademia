@@ -5,8 +5,8 @@ import { FacebookLogoIcon, InstagramLogoIcon } from "@phosphor-icons/react";
 export function FooterPage() {
     return (
         <footer className="mt-auto border-t border-white/10 bg-zinc-950">
-            <div className="mx-auto w-full max-w-5xl px-6 py-10">
-                <div className="grid gap-8 md:grid-cols-3">
+            <div className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6">
+                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="space-y-2">
                         <p className="text-sm font-semibold text-white">Contato</p>
                         <p className="text-sm text-white/70">Telefone: (16) 99363-3824</p>

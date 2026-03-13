@@ -4,11 +4,11 @@ export function BodyPage() {
     return (
 
         <main className="flex-1">
-            <section className="mx-auto w-full max-w-5xl px-6 py-12">
+            <section className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6 sm:py-12">
                 <div className="grid items-center gap-10 md:grid-cols-2">
                     <div className="space-y-5">
                         <p className="text-sm font-semibold tracking-wide text-white/60">Treinamento personalizado</p>
-                        <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-5xl">
+                        <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl">
                             Evolua com um plano feito para você.
                         </h1>
                         <p className="text-base leading-relaxed text-white/70">
@@ -19,13 +19,13 @@ export function BodyPage() {
                         <div className="flex flex-col gap-3 sm:flex-row">
                             <a
                                 href="https://www.instagram.com/wagnerlimas_personall/"
-                                className="inline-flex items-center justify-center rounded-full bg-lime-300 px-5 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-lime-200"
+                                className="inline-flex w-full items-center justify-center rounded-full bg-lime-300 px-5 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-lime-200 sm:w-auto"
                             >
-                                Agendar avaliação
+                                Entrar em contato
                             </a>
                             <a
                                 href="https://maps.app.goo.gl/SmLdD8HPrkFFAb2Y6"
-                                className="inline-flex items-center justify-center rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white transition hover:border-white/30"
+                                className="inline-flex w-full items-center justify-center rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white transition hover:border-white/30 sm:w-auto"
                             >
                                 Ver localização
                             </a>
@@ -46,8 +46,8 @@ export function BodyPage() {
                 </div>
             </section>
 
-            <section className="mx-auto w-full max-w-5xl px-6 pb-14">
-                <div className="grid gap-6 md:grid-cols-3">
+            <section className="mx-auto w-full max-w-5xl px-4 pb-14 sm:px-6">
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
                         <h2 className="text-base font-semibold text-white">Treinos sob medida</h2>
                         <p className="mt-2 text-sm leading-relaxed text-white/70">
