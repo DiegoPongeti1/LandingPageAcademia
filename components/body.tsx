@@ -1,46 +1,73 @@
-'use cliente'
-
 import Image from "next/image";
 
 export function BodyPage() {
     return (
 
-        <section className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)] p-10 bg-gray-400 gap-10">
-            <div className="border border-white rounded-lg p-4">
-                <div className="max-w-2xl flex flex-col items-center gap-6 text-center">
-
-                    <h1 className="text-[#D1FF00] text-4xl font-bold uppercase tracking-tighter">Sobre mim</h1>
-
-                    <div className="space-y-4">
-
-                        <p className="text-black text-xl leading-relaxed">
-                            Olá, sou <span className="text-[#D1FF00] font-bold">Wagner Lima</span>, Personal Trainer com experiência em ajudar pessoas a alcançarem seus objetivos de saúde e bem-estar. Com uma abordagem personalizada e baseada em evidências, ofereço treinos adaptados às necessidades individuais,
-                            visando sempre a segurança e o progresso dos meus alunos.
+        <main className="flex-1">
+            <section className="mx-auto w-full max-w-5xl px-6 py-12">
+                <div className="grid items-center gap-10 md:grid-cols-2">
+                    <div className="space-y-5">
+                        <p className="text-sm font-semibold tracking-wide text-white/60">Treinamento personalizado</p>
+                        <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-5xl">
+                            Evolua com um plano feito para você.
+                        </h1>
+                        <p className="text-base leading-relaxed text-white/70">
+                            Olá, sou <span className="font-semibold text-lime-300">Wagner Lima</span>, Personal Trainer. Eu
+                            te ajudo a alcançar resultados com treinos objetivos, acompanhamento e consistência.
                         </p>
 
-                        <p className="text-black text-base border border-white rounded-lg p-4">
-                            Meu compromisso é fornecer um serviço de excelência, com acompanhamento dedicado e orientação profissional para que você atinja seus objetivos de forma saudável e sustentável.
+                        <div className="flex flex-col gap-3 sm:flex-row">
+                            <a
+                                href="https://www.instagram.com/wagnerlimas_personall/"
+                                className="inline-flex items-center justify-center rounded-full bg-lime-300 px-5 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-lime-200"
+                            >
+                                Agendar avaliação
+                            </a>
+                            <a
+                                href="https://maps.app.goo.gl/SmLdD8HPrkFFAb2Y6"
+                                className="inline-flex items-center justify-center rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white transition hover:border-white/30"
+                            >
+                                Ver localização
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl">
+                            <Image
+                                src="/wagnerfoto.jpg"
+                                alt="Wagner Lima"
+                                fill
+                                priority
+                                className="object-cover"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="mx-auto w-full max-w-5xl px-6 pb-14">
+                <div className="grid gap-6 md:grid-cols-3">
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+                        <h2 className="text-base font-semibold text-white">Treinos sob medida</h2>
+                        <p className="mt-2 text-sm leading-relaxed text-white/70">
+                            Plano individual conforme seu objetivo, rotina e nível atual.
+                        </p>
+                    </div>
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+                        <h2 className="text-base font-semibold text-white">Acompanhamento</h2>
+                        <p className="mt-2 text-sm leading-relaxed text-white/70">
+                            Ajustes frequentes, orientação e suporte pra manter o ritmo.
+                        </p>
+                    </div>
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+                        <h2 className="text-base font-semibold text-white">Resultado com segurança</h2>
+                        <p className="mt-2 text-sm leading-relaxed text-white/70">
+                            Evolução sustentável com foco em técnica, progresso e consistência.
                         </p>
                     </div>
                 </div>
-            </div>
-
-
-            <div className="flex flex-col items-center justify-center">
-                <h2 className="text-2xl font-extrabold text-amber-300">Meus trabalhos</h2>
-                <div>
-                    <Image
-                        src="/wagnerfoto.jpg"
-                        alt="Logo"
-                        width={150}
-                        height={150}
-                        priority
-                        className="object-contain "
-                    />
-                </div>
-
-            </div>
-
-        </section>
+            </section>
+        </main>
     );
 }
